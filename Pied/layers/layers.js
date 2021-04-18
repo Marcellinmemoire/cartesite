@@ -128,23 +128,23 @@ var lyr_pied_8 = new ol.layer.Vector({
     <img src="styles/legend/pied_8_2.png" /> 15<br />\
     <img src="styles/legend/pied_8_3.png" /> <br />'
         });
-var format_siterepro_9 = new ol.format.GeoJSON();
-var features_siterepro_9 = format_siterepro_9.readFeatures(json_siterepro_9, 
+var format_site_externe_L93_9 = new ol.format.GeoJSON();
+var features_site_externe_L93_9 = format_site_externe_L93_9.readFeatures(json_site_externe_L93_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_siterepro_9 = new ol.source.Vector({
+var jsonSource_site_externe_L93_9 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_siterepro_9.addFeatures(features_siterepro_9);
-var lyr_siterepro_9 = new ol.layer.Vector({
+jsonSource_site_externe_L93_9.addFeatures(features_site_externe_L93_9);
+var lyr_site_externe_L93_9 = new ol.layer.Vector({
                 declutter: true,
-                source:jsonSource_siterepro_9, 
-                style: style_siterepro_9,
+                source:jsonSource_site_externe_L93_9, 
+                style: style_site_externe_L93_9,
                 interactive: true,
-                title: '<img src="styles/legend/siterepro_9.png" /> siterepro'
+                title: '<img src="styles/legend/site_externe_L93_9.png" /> site_externe_L93'
             });
 
-lyr_GoogleSatellite_0.setVisible(true);lyr_paca_1.setVisible(true);lyr_FPHAUTEALPE_2.setVisible(true);lyr_fpalpemari_3.setVisible(true);lyr_FPHAUTEPRO_4.setVisible(true);lyr_FPVAR_5.setVisible(true);lyr_fpvaucluse_6.setVisible(true);lyr_FPbr_7.setVisible(true);lyr_pied_8.setVisible(true);lyr_siterepro_9.setVisible(true);
-var layersList = [lyr_GoogleSatellite_0,lyr_paca_1,lyr_FPHAUTEALPE_2,lyr_fpalpemari_3,lyr_FPHAUTEPRO_4,lyr_FPVAR_5,lyr_fpvaucluse_6,lyr_FPbr_7,lyr_pied_8,lyr_siterepro_9];
+lyr_GoogleSatellite_0.setVisible(true);lyr_paca_1.setVisible(true);lyr_FPHAUTEALPE_2.setVisible(true);lyr_fpalpemari_3.setVisible(true);lyr_FPHAUTEPRO_4.setVisible(true);lyr_FPVAR_5.setVisible(true);lyr_fpvaucluse_6.setVisible(true);lyr_FPbr_7.setVisible(true);lyr_pied_8.setVisible(true);lyr_site_externe_L93_9.setVisible(true);
+var layersList = [lyr_GoogleSatellite_0,lyr_paca_1,lyr_FPHAUTEALPE_2,lyr_fpalpemari_3,lyr_FPHAUTEPRO_4,lyr_FPVAR_5,lyr_fpvaucluse_6,lyr_FPbr_7,lyr_pied_8,lyr_site_externe_L93_9];
 lyr_paca_1.set('fieldAliases', {'qc_id': 'qc_id', 'code_insee': 'code_insee', 'nom': 'nom', 'nuts2': 'nuts2', 'wikipedia': 'wikipedia', 'surf_km2': 'surf_km2', });
 lyr_FPHAUTEALPE_2.set('fieldAliases', {'Lib_Forêt': 'Lib_Forêt', });
 lyr_fpalpemari_3.set('fieldAliases', {'Lib_Forêt': 'Lib_Forêt', });
@@ -153,7 +153,7 @@ lyr_FPVAR_5.set('fieldAliases', {'Lib_Forêt': 'Lib_Forêt', });
 lyr_fpvaucluse_6.set('fieldAliases', {'Lib_Forêt': 'Lib_Forêt', });
 lyr_FPbr_7.set('fieldAliases', {'Lib_Forêt': 'Lib_Forêt', });
 lyr_pied_8.set('fieldAliases', {'AA_MINS': 'temps de trajet (minute)', });
-lyr_siterepro_9.set('fieldAliases', {'nom_site': 'Nom Site', 'nom_com': 'Nom Commune', 'nom_dep': 'Nom Départemernt', 'catégorie': 'Catégorie du site', 'nb_visteur': 'Nombre de visiteur à l\'année', 'ouverture ': 'Mois d\'ouverture', 'g / p': 'Gratuit/Payant', 'gestion': 'gestion', 'lieu': 'Nature du lieu', 'mention': 'Distinction', 'descript': 'Description', });
+lyr_site_externe_L93_9.set('fieldAliases', {'nom_site': 'Nom site', 'nom_com': ' Commune', 'nom_dep': 'Département ', 'catégorie': 'catégorie', 'nb_visteur': 'Nombre de visiteur à l\'année', 'ouverture': 'ouverture', 'g / p': 'Gratuit / Payant', 'gestion': 'Gestion', 'lieu': 'Nature du Lieu', 'mention': 'Distinction', 'descript': 'Description', });
 lyr_paca_1.set('fieldImages', {'qc_id': '', 'code_insee': 'TextEdit', 'nom': 'TextEdit', 'nuts2': 'TextEdit', 'wikipedia': 'TextEdit', 'surf_km2': 'TextEdit', });
 lyr_FPHAUTEALPE_2.set('fieldImages', {'Lib_Forêt': 'TextEdit', });
 lyr_fpalpemari_3.set('fieldImages', {'Lib_Forêt': 'TextEdit', });
@@ -162,7 +162,7 @@ lyr_FPVAR_5.set('fieldImages', {'Lib_Forêt': 'TextEdit', });
 lyr_fpvaucluse_6.set('fieldImages', {'Lib_Forêt': 'TextEdit', });
 lyr_FPbr_7.set('fieldImages', {'Lib_Forêt': 'TextEdit', });
 lyr_pied_8.set('fieldImages', {'AA_MINS': 'TextEdit', });
-lyr_siterepro_9.set('fieldImages', {'nom_site': '', 'nom_com': '', 'nom_dep': '', 'catégorie': '', 'nb_visteur': '', 'ouverture ': '', 'g / p': '', 'gestion': '', 'lieu': '', 'mention': '', 'descript': '', });
+lyr_site_externe_L93_9.set('fieldImages', {'nom_site': 'TextEdit', 'nom_com': 'TextEdit', 'nom_dep': 'TextEdit', 'catégorie': 'TextEdit', 'nb_visteur': 'TextEdit', 'ouverture': 'TextEdit', 'g / p': 'TextEdit', 'gestion': 'TextEdit', 'lieu': 'TextEdit', 'mention': 'TextEdit', 'descript': 'TextEdit', });
 lyr_paca_1.set('fieldLabels', {'qc_id': 'no label', 'code_insee': 'header label', 'nom': 'header label', 'nuts2': 'no label', 'wikipedia': 'inline label', 'surf_km2': 'inline label', });
 lyr_FPHAUTEALPE_2.set('fieldLabels', {'Lib_Forêt': 'inline label', });
 lyr_fpalpemari_3.set('fieldLabels', {'Lib_Forêt': 'inline label', });
@@ -171,7 +171,7 @@ lyr_FPVAR_5.set('fieldLabels', {'Lib_Forêt': 'inline label', });
 lyr_fpvaucluse_6.set('fieldLabels', {'Lib_Forêt': 'inline label', });
 lyr_FPbr_7.set('fieldLabels', {'Lib_Forêt': 'inline label', });
 lyr_pied_8.set('fieldLabels', {'AA_MINS': 'inline label', });
-lyr_siterepro_9.set('fieldLabels', {'nom_site': 'inline label', 'nom_com': 'inline label', 'nom_dep': 'inline label', 'catégorie': 'inline label', 'nb_visteur': 'inline label', 'ouverture ': 'inline label', 'g / p': 'inline label', 'gestion': 'inline label', 'lieu': 'inline label', 'mention': 'inline label', 'descript': 'inline label', });
-lyr_siterepro_9.on('precompose', function(evt) {
+lyr_site_externe_L93_9.set('fieldLabels', {'nom_site': 'inline label', 'nom_com': 'inline label', 'nom_dep': 'inline label', 'catégorie': 'inline label', 'nb_visteur': 'inline label', 'ouverture': 'inline label', 'g / p': 'inline label', 'gestion': 'inline label', 'lieu': 'inline label', 'mention': 'inline label', 'descript': 'inline label', });
+lyr_site_externe_L93_9.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
